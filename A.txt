@@ -1,0 +1,349 @@
+
+<html>
+<head>
+	<title>Final Project</title>
+	<style>
+	body{
+	margin:0px;
+	padding:0px;
+	}
+	
+	#maindiv{
+	background-image:linear-gradient(cyan, white);
+	height:800px;
+	width:100%;
+	}
+	
+	#bannerdiv{
+	background-image:url("images/ilam.jpg");
+		background-repeat: no-repeat;
+		background-size: 1000px, 152px;
+	height:201px;
+	width:1001px;
+	margin:auto;
+	text-align:center;
+	
+	}
+		#bannerdiv h1{
+			
+			color:yellow;
+			text-decoration:underline;
+			padding:60px;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+		}	
+		
+	#menudiv{
+	background-color:brown;
+	height:30px;
+	width:1000px;
+	margin:auto;
+	}#menudiv td{
+		
+		border:1px, none;
+		border-top-left-radius: 10px;
+		background-color: brown;
+		height:24px;
+		width:159px;
+		color: white;
+		text-align: center;
+	}
+	#menudiv td a:link{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:hover{
+		color:white;
+		text-decoration: underline;
+	}
+	#menudiv td a:visited{
+		color:white;
+		text-decoration: none;
+	}
+	#menudiv td a:active{
+		color:red;
+		text-decoration: none;
+	}
+	.dropdown{
+		position:relative;
+		display:inline-block;
+		height: 24px;
+
+	}
+	.dropdown-menu
+	{
+		display:none;
+		position:absolute;
+		backgground-color:silver;
+		min-width: 159px;
+		height: 24px;
+		 z-index: 1;
+	}
+	.dropdown-menu a{
+		background-color: silver;
+		color:yellow;
+		text-decoration: none;
+		display: block;
+		height: 24px;
+	
+	}
+	.dropdown-menu a:hover{
+		background-color: silver;
+		color:maroon;
+		height: 24px;
+		
+	
+	}
+	.dropdown:hover .dropdown-menu{
+		display:block;
+		height: 24px;
+		
+	}
+	.dropdown:hover{
+		background-color:sliver;
+		text-decoration: none;
+		height: 24px;
+	}
+
+		
+	
+	#bodydiv{
+	background-image:linear-gradient(pea, white);
+	
+	height:501px;
+	width:1001px;
+	margin:auto;
+	}
+	
+	#body_leftdiv{
+	height:auto;
+	width:221px;
+	float:left;
+	}
+	#body_middlediv{
+	height:auto;
+	width:531px;
+	float:left;
+	}
+	#body_middle_contentdiv{
+	margin:5px;
+	
+	}
+	#body_right_top{
+	height:210px;
+	float:right;
+	width:248px;
+	background-image: linear-gradient(pea,white);
+	margin-bottom: 1px;
+	
+}
+#body_right_top td{
+	background-color: brown;
+	text-align:center;
+	height:40px;
+}
+		#body_right_top td a:link{
+			color:white;
+			text-align:center;
+			text-decoration:none;
+		}
+		#body_right_top td a:hover{
+			color:white;
+			text-decoration:none;
+		}
+		#body_right_top td a:visited{
+			color:white;
+			text-decoration:none;
+		}
+		#body_right_top td a:active{
+			color:white;
+			text-decoration:none;
+		}
+
+#body_right_bottom{
+	height:350px;
+	float:right;
+	width:248px;
+	background-image:linear-gradient(white,skyblue);
+	margin-top: 1px;
+}
+
+	img{
+	border:5px groove lightyellow;
+	}
+			#footerdiv{
+				height:100px;
+				width:1000px;
+				margin:auto;
+				background-color: light blue;
+			}
+
+			#footerdiv td{
+				padding:10px;
+				color:white;
+			}
+
+			#footerdiv a:link, #body_right_top a:link{
+
+				color: white;
+				text-decoration:none;
+			}
+
+			#footerdiv a:hover, #body_right_top a:hover {
+
+				color: yellow;
+			}
+
+			#footerdiv a:visited, #body_right_top a:visited {
+
+				color: white;
+			}
+
+			#footerdiv a:active, #body_right_top a:active {
+
+				color: red;
+			}
+		
+	</style>
+</head>
+<body>
+<div id="maindiv">
+	<div id="bannerdiv">
+	  <h1>Welcome! Himalayan Aromatic Orthodox Tea</h1><marquee><h2><font face"thaoma" color="green">Where there is tea there is hope..take original taste of Ilam Organic Tea</h2></marquee>
+	</div>
+	<div id=menudiv>
+		<table align="right">
+			<tr>
+				<td ><a href="index.html">Home</a></td>
+				<td ><a href="intro.html">Introduction</a></td>
+				<td><a href="score.html">About Us</a></td>
+				<td><a href="contact Us.html">Contact Us</a></td>
+				<td><a href="gallery.html">Gallery</a></td>
+				<td><a href="orderform.html">Online Booking</a></td>
+				 <td class="dropdown">
+			  Our Collections
+				<div class="dropdown-menu">
+			  <a href="m.html">Man's Items</a>
+				<a href="w.html">Women's Items</a>
+				<a href="c.html">Child Items</a>
+			  </div>
+			  </td>
+				
+			</tr>
+		</table>
+
+	</div>
+	
+	<div id="bodydiv">
+		<div id="body_leftdiv">
+		<table>
+		<tr>
+			<td><a href="#" onClick="showimg1()">welcome</a></td>
+			<td><a href="#" onClick="showimg2()"><img src="images/a1.jpg" height="100px" width="100px"/></a></td>
+		</tr>
+		<tr>
+			<td><a href="#" onClick="showimg3()"><img src="images/a2.jpg" height="100px" width="100px"/></a></td>
+			<td><a href="#" onClick="showimg4()"><img src="images/a3.jpg" height="100px" width="100px"/></a></td>
+		</tr>
+		<tr>
+			<td><a href="#" onClick="showimg5()"><img src="images/a4.jpg" height="100px" width="100px"/></a></td>
+			<td><a href="#" onClick="showimg6()"><img src="images/a5.jpg" height="100px" width="100px"/></a></td>
+		</tr>
+		<tr>
+			<td><a href="#" onClick="showimg7()"><img src="images/a6.jpg" height="100px" width="100px"/></a></td>
+			<td><a href="#" onClick="showimg8()"><img src="images/a7.jpg" height="100px" width="100px"/></a></td>
+		</tr>
+	
+		</table>
+		</div>
+	
+	<div id="body_middlediv">
+		<div id="body_middle_contentdiv">
+		,
+		<img src="images/a2.jpg" height="430" width="500" id="newimg"/>
+		<script>
+		function showimg1(){
+			var img1="images/a2.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg2(){
+			var img1="images/a1.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg3(){
+			var img1="images/a2.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg4(){
+			var img1="images/a3.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg5(){
+			var img1="images/a4.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg6(){
+			var img1="images/a5.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg7(){
+			var img1="images/a6.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		function showimg8(){
+			var img1="images/a7.jpg";
+			document.getElementById("newimg").src=img1.replace('400*300', '400*300');
+		}
+		
+		
+		</script>
+		</div>
+
+	</div>
+	<div id=body_right_top>
+			<table width="250px" height="202px">
+				<tr>
+					<td><a href="3locations.html"><img src="shop.jpg" width="20px" height="20px"/>&nbsp;Our Location</a></td>
+				</tr>
+				<tr>
+					<td><a href="timetable.html">&nbsp;Time  &nbsp;&nbsp; Table</a></td>
+				</tr>
+				<tr>
+					<td><a href="jsworld.html"><img src="js.png" width="20px" height="20px"/> &nbsp;Our &nbsp; Outlets</a></td>
+				</tr>
+				<tr>
+					<td><a href="form.html"><img src="form.jpg" width="20px" height="20px"/>Online Booking</a></td>
+				</tr>
+				<tr>
+					<td><a href="map.html"><img src="map.jpg" width="20px" height="20px"/>Other Varities</a></td>
+				</tr>
+			</table>
+		</div>
+	
+	  <div id=body_right_bottom> </div>
+
+	</div>
+	
+		
+	</div>
+
+</div>
+<div id="footerdiv">
+	<table align="center">
+		<tr>
+			<td align="center">
+				<p> <a href="index.html">Home</a>| 
+					<a href="aboutus.html">About us</a>|
+					<a href="contact us.html">Contact us</a>| 
+					<a href="gallery.html">Gallery</a>| 
+					<a href="reservation.html">Reservation</a>| 
+					<a href="contact.html">Contact Us</a><br/>
+			Copyrights all reserved @group 8 web 1.<br/>2019
+</p>
+			</td>
+		</tr>
+	</table>
+
+</div>
+
+</body>
+</html>

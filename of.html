@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Online Order Form</title>
+</head>
+<body bgcolor="purple">
+<center>
+<marquee><h1><font face"thaoma" color="green">Where there is tea there is hope..take original taste of Ilam Organic Tea</h1></marquee>
+
+<div id="bodydiv">
+<div id="body_leftdiv">
+	<form name="form1">
+	<table width="750px" style="margin:0px;padding:0px;" border="0px">
+  	<tbody>
+    <tr>
+		<td colspan="3" align="center"><h1>PLEASE FILL UP THE FORM FOR ONLINE BOOKING</h1></td>
+
+    </tr>
+    <tr>
+      <td align="center">Inpur Your Name:</td></TR><BR>
+				<TR>
+      <td><input type="text" name="name" value=""/></td>
+      <td><input type="button" onclick="showName()" value="ShowName"/>
+		<script>
+		  function showName(){
+
+			  var fullname=document.form1.name.value;
+			  alert("Hello! "+fullname );
+		  }
+
+		  </script>
+
+		</td>
+    </tr>
+    <tr>
+      <td align="center">Inpur Your Username:</td></TR>
+			<BR><TR>
+	  <td><input type="text" name="username" value=""/>
+
+
+		</td>
+	  <td><input type="button" onclick="showUserName()" value="ShowUserName"/>
+		<script>
+		  function showUserName(){
+			var str=document.form1.username.value;
+		 	alert("Your Username is: "+str );
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Inpur Your Password:</td></TR><BR><TR>
+      <td><input type="password" name="password" value=""/></td>
+	  <td><input type="button" onclick="showPassword()" value="ShowPassword"/>
+		<script>
+		  function showPassword(){
+
+			  var str=document.form1.password.value;
+			  alert("Your Password is: "+str );
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Inpur Your Phone Number:</td></tr><br><tr>
+      <td><input type="text" name="phone" value=""/></td>
+	  <td><input type="button" onclick="showNumber()" value="ShowNumber"/>
+		<script>
+		  function showNumber(){
+
+			  var str=document.form1.phone.value;
+			  alert("Your Phone Number is: "+str );
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Select Your Gender: </td></tr><br><tr>
+      <td><input type="radio" name="gender" value="Male"/>Male
+      <input type="radio" name="gender" value="Female"/>Female</td>
+	  <td><input type="button" onclick="showGender()" value="ShowGender"/>
+		<script>
+		  function showGender(){
+
+			  var str=document.form1.gender.value;
+			  alert("You are : "+str );
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Choose Your Languages:</td></tr><br><tr>
+      <td>
+		  <ul>
+
+			<li><input type="checkbox" name="language" value="English" checked/>English</li>
+			<li><input type="checkbox" name="language" value="Nepali"/>Nepali</li>
+			<li><input type="checkbox" name="language" value="Chinese"/>Chinese</li>
+			<li><input type="checkbox" name="language" value="Japanese"/>Japanese</li>
+			<li><input type="checkbox" name="language" value="Arabi"/>Arabi</li>
+		  </ul>
+
+		</td>
+	  <td><input type="button" onclick="showLanguage()" value="ShowLanguage"/>
+
+		  <script type="text/javascript">
+			function showLanguage(){
+				var lang=document.getElementsByName('language');
+				var selectedItems="";
+				for(var i=0; i<lang.length; i++){
+					if(lang[i].type=='checkbox' && lang[i].checked==true)
+						selectedItems+=lang[i].value+"\n";
+				}
+				alert("You can speak : "+ "\n"+ selectedItems);
+			}
+		  </script>
+
+	</td>
+    </tr>
+    <tr>
+      <td align="center">Choose Our Outlet: </td></tr><br><tr>
+      <td>
+		 <select name="Store">
+		 <option value="Hyakumanben" selected>Hyakumanben</option>
+		 <option value="Kyoto Ekimae">Kyoto Ekimae</option>
+		 <option value="Rakuhoku">Rakuhoku</option>
+		 <option value="Kamogawa">Kamogawa</option>
+		 </select>
+
+		</td>
+	  <td><input type="button" onclick="showStore()" value="ShowStore"/>
+		<script>
+		  function showStore()
+			{
+
+					  var str=document.form1.store.value;
+					  alert("You selected: "+str );
+
+		  }
+
+		 </script>
+
+	</td>
+    </tr>
+</table>
+</center>
+</body>
+</html>

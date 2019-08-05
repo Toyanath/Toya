@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>Mans Items</title>
+</head>
+<body bgcolor="purple">
+<p><IMG src="m1.jpg"height="200"width="230"align="left"></p><br>
+<p><IMG src="m2.jpeg"height="200"width="230"align="left"></p><br><br>
+<p><IMG src="m3.jpg"height="200"width="230"align="left"></p><br>
+  <p><IMG src="m4.jpg"height="200"width="230"align="center"></p><br>
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8"> 
+		<style>
+			#mymap{ 
+				width: 600px;
+   				height: 400px;
+			}
+		</style>
+		<title>Map Sample</title>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script>
+			function initialize(){
+				var opt = {
+					zoom: 8,
+					center: new google.maps.LatLng(35.01758,135.76887),
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var mm = document.getElementById("mymap");
+				map = new google.maps.Map(mm, opt);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(27.7089552,85.3217469),
+					map: map,
+					title: "Kathmandu"
+				});
+				var info = new google.maps.InfoWindow({
+					content: "Kathmandu is the capital city of beautiful country Nepal"
+				});
+
+				var mm = document.getElementById("mymap");
+				map = new google.maps.Map(mm, opt);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(28.2061803,83.9673087),
+					map: map,
+					title: "Pokhara"
+				});
+				var info = new google.maps.InfoWindow({
+					content: "Pokhara is the Touristcity of beautiful country Nepal"
+				});
+				var mm = document.getElementById("mymap");
+				map = new google.maps.Map(mm, opt);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(27.6752152,85.4210017),
+					map: map,
+					title: "Bhaktapur"
+				});
+				var info = new google.maps.InfoWindow({
+					content: "Bhaktapur is the Culturally Important city of beautiful country Nepal"
+				});
+				google.maps.event.addListener(marker, "click", function(){info.open(map,marker);});
+			}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+	<body>
+		<div id="mymap"></div>
+	</body>
